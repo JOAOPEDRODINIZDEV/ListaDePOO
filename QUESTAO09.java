@@ -1,12 +1,8 @@
-import java.util.Scanner;
-
 public class QUESTAO09 {
     public static void main(String[] args) {
 
         System.out.print("Digite o seu salario: ");
-        Scanner scanner = new Scanner(System.in);
-        double salario_atual = scanner.nextDouble();
-
+        double salario_atual = 200;
         double percentual;
         double aumento;
         double novoSalario;
@@ -24,11 +20,10 @@ public class QUESTAO09 {
         aumento = salario_atual * (percentual / 100);
         novoSalario = salario_atual + aumento;
 
-        System.out.println("Salário antes do reajuste: R$" + salario_atual);
-        System.out.println("Percentual de aumento aplicado: " + percentual + "%");
-        System.out.println("Valor do aumento: R$" + aumento);
+        System.out.println("Salário antes do reajuste: " + salario_atual);
+        System.out.println("Percentual de aumento: " + percentual + "%");
+        System.out.println("Valor do aumento: " + aumento);
         System.out.println("Novo salário após o aumento: R$" + novoSalario);
 
-        scanner.close();
     }
 }
